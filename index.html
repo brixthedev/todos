@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="todos-icon.png" type="image/png" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+    <title>devBrix &mdash; Todos</title>
+  </head>
+  <body>
+    <h1 class="todo-title"><span>Todo</span> List</h1>
+    <form autocomplete="off">
+      <input
+        type="text"
+        id="todo-input"
+        class="todo-input"
+        placeholder="Enter a todo..."
+      />
+      <button type="submit" class="todo-button-add" id="todo-button-add">
+        <i class="fas fa-plus-square"></i>
+      </button>
+    </form>
+    <main class="todo-container">
+      <ul id="todo-list" class="todo-list"></ul>
+    </main>
+  </body>
+</html>
